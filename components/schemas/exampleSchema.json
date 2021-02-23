@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "FirstName": "Iheb",
+            "LastName": "CHEMKHI",
+            "DateOfBirth": "1999-10-12",
+            "Email": "testuser@gmail.com",
+            "Gender": "Male",
+            "City": "Oulu",
+            "CountryCode": "FI",
+            "Username": "putra",
+            "Password": "$2b$06$pEh3z4nKFuEx.l/sTcOHmugQm1.CLBe3fKT7ZSoCQA0UfwX26CpIa"
+        }
+    ],
+    "required": [
+        "FirstName",
+        "LastName",
+        "DateOfBirth",
+        "Email",
+        "Gender",
+        "City",
+        "CountryCode",
+        "Username",
+        "Password"
+    ],
+    "properties": {
+        "FirstName": {
+            "$id": "#/properties/FirstName",
+            "type": "string",
+            "title": "The FirstName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 2,
+            "default": "",
+            "examples": [
+                "Iheb"
+            ]
+        },
+        "LastName": {
+            "$id": "#/properties/LastName",
+            "type": "string",
+            "title": "The LastName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 2,
+            "default": "",
+            "examples": [
+                "CHEMKHI"
+            ]
+        },
+        "DateOfBirth": {
+            "$id": "#/properties/DateOfBirth",
+            "type": "string",
+            "title": "The DateOfBirth schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1999-10-12"
+            ]
+        },
+        "Email": {
+            "$id": "#/properties/Email",
+            "type": "string",
+            "pattern": "[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.][a-zA-Z0-9]+",
+            "title": "The Email schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "testuser@gmail.com"
+            ]
+        },
+        "Gender": {
+            "$id": "#/properties/Gender",
+            "type": "string",
+            "title": "The Gender schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Male"
+            ]
+        },
+        "City": {
+            "$id": "#/properties/City",
+            "type": "string",
+            "title": "The City schema",
+            "minLength": 2,
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Oulu"
+            ]
+        },
+        "CountryCode": {
+            "$id": "#/properties/CountryCode",
+            "type": "string",
+            "title": "The CountryCode schema",
+            "minLength": 2,
+            "maxLength": 2,
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "FI"
+            ]
+        },
+        "Username": {
+            "$id": "#/properties/Username",
+            "type": "string",
+            "minLength":3,
+            "title": "The Username schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "putra"
+            ]
+        },
+        "Password": {
+            "$id": "#/properties/Password",
+            "type": "string",
+            "minLength":6,
+            "title": "The Password schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "putra123"
+            ]
+        }
+        
+    },
+    "additionalProperties": false
+}

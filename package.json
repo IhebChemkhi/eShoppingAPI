@@ -1,0 +1,34 @@
+{
+  "name": "express-api-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx newman run postman-collections/DogTestingNewman.postman_collection.json -e postman-collections/Development.postman_environment.json",
+    "api": "node node_modules/nodemon/bin/nodemon.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^7.0.3",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "has-value": "^2.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "chai-json-schema-ajv": "^5.2.3",
+    "mocha": "^8.3.0",
+    "newman": "^5.2.2",
+    "nodemon": "^1.19.4",
+    "passport-http": "^0.3.0"
+  }
+}
