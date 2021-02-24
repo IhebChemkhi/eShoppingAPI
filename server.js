@@ -12,7 +12,6 @@ const jsonSchemaValidationExample = require('./components/jsonSchemaValidationEx
 
 app.set('port',(process.env.PORT || port)) // port 3000
 
-
 const customHeaderCheckerMiddleware = function(req, res, next) {
     console.log('Middleware is active!');
     if(req.headers['custom-header-param'] === undefined)
