@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-//const port = 4000;
+const port =4000;
 const userComponent = require('./components/users');
 const userLogin = require ('./components/login');
 const items = require('./components/items');
@@ -10,7 +10,7 @@ const apiKeyDemo = require('./components/apiKeyDemo');
 const cors = require('cors');
 const jsonSchemaValidationExample = require('./components/jsonSchemaValidationExample');
 
-app.set('port',(process.env.PORT || 80))
+app.set('port',(process.env.PORT || port)) // port 3000
 
 
 const customHeaderCheckerMiddleware = function(req, res, next) {
@@ -89,7 +89,7 @@ let serverInstance = null;
 module.exports ={
   start: function() {
     serverInstance = app.listen(app.get('port'), () => {
-      console.log(`Example API listening on`,app.get('port'));
+      console.log(`Example API listening on`,app.get('port')); // port 3000
     });
   }, 
   close: function() {
