@@ -10,7 +10,7 @@ const apiKeyDemo = require('./components/apiKeyDemo');
 const cors = require('cors');
 const jsonSchemaValidationExample = require('./components/jsonSchemaValidationExample');
 
-app.set('port',(process.env.PORT || port)) // port 3000
+app.set('port',(process.env.PORT || port)) // port 4000
 
 const customHeaderCheckerMiddleware = function(req, res, next) {
     console.log('Middleware is active!');
@@ -88,7 +88,7 @@ let serverInstance = null;
 module.exports ={
   start: function() {
     serverInstance = app.listen(app.get('port'), () => {
-      console.log(`Example API listening on`,app.get('port')); // port 3000
+      console.log(`Example API listening on`,app.get('port')); // port 4000
     });
   }, 
   close: function() {
