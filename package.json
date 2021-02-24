@@ -20,9 +20,7 @@
     "multer": "^1.4.2",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
-    "uuid": "^3.4.0"
-  },
-  "devDependencies": {
+    "uuid": "^3.4.0",
     "chai": "^4.3.0",
     "chai-http": "^4.3.0",
     "chai-json-schema-ajv": "^5.2.3",
@@ -30,5 +28,7 @@
     "newman": "^5.2.2",
     "nodemon": "^1.19.4",
     "passport-http": "^0.3.0"
+  },
+  "devDependencies": {
   }
 }
