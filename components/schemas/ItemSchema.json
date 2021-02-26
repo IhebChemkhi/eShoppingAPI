@@ -7,14 +7,13 @@
     "default": {},
     "examples": [
         {
-            "title": "seleazeazeazea",
-            "description": "selling aazeazeazeazd car ",
-            "category": "ceazeazeazs",
+            "title": "selling car",
+            "description": "selling a pretty good car ",
+            "category": "cars",
             "location": "Oulu",
-            "images": "teazeazeaz6.png",
+            "images": "test456.png",
             "price": 20000,
-            "date": "18/02/2021",
-            "type": "BMWeéeazezeazg",
+            "type": "BMW amg",
             "shipping": "pickup"
         }
     ],
@@ -25,7 +24,6 @@
         "location",
         "images",
         "price",
-        "date",
         "type",
         "shipping"
     ],
@@ -37,7 +35,7 @@
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
-                "seleazeazeazea"
+                "selling car"
             ]
         },
         "description": {
@@ -47,7 +45,7 @@
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
-                "selling aazeazeazeazd car "
+                "selling a pretty good car "
             ]
         },
         "category": {
@@ -57,7 +55,7 @@
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
-                "ceazeazeazs"
+                "cars"
             ]
         },
         "location": {
@@ -77,7 +75,7 @@
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
-                "teazeazeaz6.png"
+                "test456.png"
             ]
         },
         "price": {
@@ -90,16 +88,6 @@
                 20000
             ]
         },
-        "date": {
-            "$id": "#/properties/date",
-            "type": "string",
-            "title": "The date schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "18/02/2021"
-            ]
-        },
         "type": {
             "$id": "#/properties/type",
             "type": "string",
@@ -107,7 +95,7 @@
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
-                "BMWeéeazezeazg"
+                "BMW amg"
             ]
         },
         "shipping": {

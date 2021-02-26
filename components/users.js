@@ -220,7 +220,9 @@ passport.authenticate('jwt', { session: false }),
             email:newItem.seller.email,
             id: newItem.seller.id,
 
-        } 
+        },
+
+        id: newItem.id
     }
     );
 })
