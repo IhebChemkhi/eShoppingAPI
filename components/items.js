@@ -2,7 +2,10 @@ const express = require('express');
 const has = require('has-value');
 const router = express.Router();
 const uuidv4 = require('uuid/v4');
-
+const passport = require('passport');
+const JwtStrategy = require('passport-jwt').Strategy,
+      ExtractJwt = require('passport-jwt').ExtractJwt;
+const BasicStrategy = require('passport-http').BasicStrategy;
 
 
 let itemData = {
@@ -63,6 +66,14 @@ let itemData = {
 //router.get('/', (req, res) => { const getItem = items.getAllItems(); res.json(getItem)});
 router.get('/',(req,res) =>{res.json(itemData)});
 
+router.get('/user/',
+passport.authenticate('jwt', { session: false }),
+(req,res) =>{
+    let result = itemData.items.filter(i => i.seller.id == req.user.userID);
+    res.json(result)});
+
+
+
 router.get('/searchByCategory/:category', (req,res) => {
    const  filteredItems = itemData.items.filter(i => i.category == req.params.category);
     res.status(200);
@@ -81,7 +92,7 @@ router.get('/searchByDate/:date', (req,res) => {
 module.exports = {
     router,
     getAllItems: () => itemData.items,
-    getItemsByID: (userID) => itemData.items.find(u => u.seller.id == userID),
+    getItemsByID: (userID) => itemData.items.filter(u => u.seller.id == userID),
     getItemsByItemID:(itemID) => itemData.items.find(u => u.id == itemID),
     addItemData : (item) => itemData.items.push(item),
     deleteItem: (itemID) => itemData.items.filter(i => i.id != itemID)

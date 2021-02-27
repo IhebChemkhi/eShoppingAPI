@@ -178,7 +178,11 @@ router.delete('/:Username', (req, res) => {
 })
 */
 
-router.get('/:userID/items', (req, res) => { const getItem = items.getItemsByID(req.params.userID); res.json(getItem)});
+/*router.get('/items',
+passport.authenticate('jwt', { session: false }),
+(req, res) => { const getItem = items.getItemsByID("f3bc26a8-a091-4366-95b4-3ab3747c5c23"); res.json(getItem)});
+
+*/
 router.post('/items',
 passport.authenticate('jwt', { session: false }),
 [
