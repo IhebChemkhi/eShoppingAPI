@@ -238,7 +238,7 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
+				
 				type:"testing1",
 				shipping:"testing1",
 			})	
@@ -258,7 +258,7 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
+
 				type:"testing1",
 				shipping:"testing1",
 			})	
@@ -278,7 +278,6 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
 				type:"testing1",
 				shipping:"testing1",
 			},
@@ -289,7 +288,6 @@ describe('Demonstration of test', function(){
 				location: null,
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
 				type:"testing1",
 				shipping:"testing1",
 			}
@@ -310,7 +308,6 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
 				type:"testing1",
 				shipping:"testing1",
 			}
@@ -334,7 +331,6 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
 				type:"testing1",
 				shipping:"testing1",
 			}
@@ -356,7 +352,7 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
+				
 				type:"testing1",
 				shipping:"testing1",
 			}
@@ -377,7 +373,7 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
+				
 				type:"testing1",
 				shipping:"testing1",
 			}
@@ -400,7 +396,7 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
+				
 				type:"testing1",
 				shipping:"testing1",
 			}
@@ -422,7 +418,7 @@ describe('Demonstration of test', function(){
 				location: "testing1",
 				images: "testing1.png",
 				price: 20000,
-				date: "18-04-2021",
+				
 				type:"testing1",
 				shipping:"testing1",
 			}

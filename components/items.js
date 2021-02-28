@@ -50,7 +50,7 @@ let itemData = {
         location: "Oulu",
         images: "socks2031.png",
         price: 1,
-        date: "18-02-2021",
+        date: "18-04-2021",
         type:"red pointy 41",
         shipping:"pickup",
         seller: {
