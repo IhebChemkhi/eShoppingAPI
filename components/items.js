@@ -11,10 +11,10 @@ const BasicStrategy = require('passport-http').BasicStrategy;
 let itemData = {
     items: [{
         title: "selling car",
-        description: "selling a pretty good car ",
+        description: "Mercedes AMG GTS looks great in this sporty combo complimented by a great spec including premium pack.. ",
         category: "cars",
         location: "Oulu",
-        images: "test456.png",
+        images: "carBMW.png",
         price: 20000,
         date: "18-04-2021",
         type:"BMW amg",
@@ -27,12 +27,12 @@ let itemData = {
         id: "2fe5c7af-c80f-4581-ba82-0badcde3973d"
     },
     {
-        title: "Selling sextoys",
-        description: "you cant find a boyfriend? we got your back! take a sextoy and enjoy",
-        category: "toys",
+        title: "Selling phone",
+        description: "Iphone 11 Black 128GB  Dual 12MP Ultra Wide and Wide cameras",
+        category: "phones",
         location: "Oulu",
         images: "xxTexx456.png",
-        price: 2,
+        price: 1600,
         date: "18-03-2021",
         type:"red 25cm",
         shipping:"pickup",
@@ -45,7 +45,7 @@ let itemData = {
     },
     {
         title: "selling socks",
-        description: "buy yourself a sock and be happy ",
+        description: "red skull socks",
         category: "cloths",
         location: "Oulu",
         images: "socks2031.png",
